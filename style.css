@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --HD-HOVER: rgb(175, 255, 47);
-}
-
 body {
   background-color: rgb(0, 78, 0);
 }
@@ -44,10 +40,6 @@ header img {
   transition: 0.3s;
 }
 
-header img:hover {
-  filter: drop-shadow(1px 1px 0.3px var(--HD-HOVER)) drop-shadow(-1px -1px 0.3px var(--HD-HOVER));
-}
-
 nav {
   width: 60%;
 }
@@ -76,9 +68,9 @@ header a {
   color: inherit;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 header a:hover {
-  color: var(--HD-HOVER);
+  color: rgb(175, 255, 47);
 }
