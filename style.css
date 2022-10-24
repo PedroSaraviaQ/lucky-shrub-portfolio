@@ -90,3 +90,23 @@ nav a:hover {
     width: 72%;
   }
 }
+
+@media screen and (min-width: 980px) {
+  .background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/bg-garden.jpg);
+    background-size: 60% 100%, 100%;
+  }
+
+  header {
+    height: 180px;
+  }
+
+  header img {
+    margin-left: 40px;
+    height: 140px;
+  }
+
+  nav {
+    width: 60%;
+  }
+}
