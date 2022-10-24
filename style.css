@@ -92,6 +92,7 @@ nav a:hover {
   header img {
     margin-left: 4vw;
     height: 14vw;
+    filter: none;
   }
 
   nav {
