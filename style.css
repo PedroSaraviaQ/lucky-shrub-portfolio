@@ -7,11 +7,16 @@
 :root {
   --LG-RADIUS: 0.5px;
   --LG-COLOR: green;
+  --BN-RADIUS: 1px;
+  --BN-COLOR: white;
 }
 
 body {
-  background-color: rgb(0, 78, 0);
-  color: #fff;
+  background-image: linear-gradient(rgb(193, 224, 210), #fff);
+  background-size: 100% 20vw;
+  background-repeat: no-repeat;
+  background-position-y: calc(200px + 44.36vw);
+  min-height: 100vh;
 }
 
 .background {
@@ -36,6 +41,7 @@ header {
   align-items: center;
   background-color: #000;
   height: 200px;
+  color: #fff;
 }
 
 header img {
@@ -73,6 +79,22 @@ nav a {
 
 nav a:hover {
   color: rgb(175, 255, 47);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 25px auto;
+  width: 90%;
+}
+
+.banner img {
+  width: 100%;
+  filter: drop-shadow(var(--BN-RADIUS) var(--BN-RADIUS) var(--BN-COLOR))
+    drop-shadow(calc(var(--BN-RADIUS) * -1) calc(var(--BN-RADIUS) * -1) var(--BN-COLOR))
+    drop-shadow(calc(var(--BN-RADIUS) * -1) var(--BN-RADIUS) var(--BN-COLOR))
+    drop-shadow(var(--BN-RADIUS) calc(var(--BN-RADIUS) * -1) var(--BN-COLOR));
 }
 
 @media screen and (min-width: 500px) {
