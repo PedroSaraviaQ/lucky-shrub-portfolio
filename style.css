@@ -9,12 +9,13 @@ body {
 }
 
 .background {
+  margin-top: 200px;
   position: absolute;
   top: 0px;
   z-index: -1;
   background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/bg-garden.jpg);
-  background-size: 60% 100%, 100%;
+  background-image: url(assets/bg-garden.jpg);
+  background-size: 100%;
   background-position: top right;
   background-repeat: no-repeat;
   width: 100%;
@@ -24,46 +25,36 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
   color: #ffffff;
-}
-
-header > a {
-  margin-left: 50px;
+  height: 200px;
 }
 
 header img {
-  height: 100px;
-  width: auto;
-  margin-top: 15px;
+  height: 120px;
   filter: drop-shadow(1px 1px 1px #000000) drop-shadow(-1px -1px 1px #000000);
-  transition: 0.3s;
 }
 
 nav {
-  width: 60%;
+  width: 100%;
 }
 
-header ul {
+nav ul {
   display: flex;
-  height: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-header li {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-header li:first-child {
+nav li:first-child {
   text-decoration: underline;
   text-underline-offset: 10px;
 }
 
-header a {
+nav a {
   text-decoration: none;
   color: inherit;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -71,6 +62,6 @@ header a {
   transition: 0.4s;
 }
 
-header a:hover {
+nav a:hover {
   color: rgb(175, 255, 47);
 }
