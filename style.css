@@ -90,7 +90,7 @@ nav a:hover {
   align-items: center;
   font-family: "Lexend Deca", Arial;
   margin: 25px auto;
-  width: 90%;
+  width: calc(40% + 170px);
   text-align: center;
 }
 
@@ -147,7 +147,7 @@ nav a:hover {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   body {
     background-position-y: calc(44.36vw - 1%);
   }
@@ -178,6 +178,7 @@ nav a:hover {
   .banner {
     flex-direction: row-reverse;
     margin-top: 0;
+    width: 90%;
   }
 
   .banner img {
@@ -191,6 +192,7 @@ nav a:hover {
   }
 
   .banner p {
+    /*********************** make font more legible by changing colors ***************************/
     color: white;
     font-size: 14px;
     text-shadow: 0px 0px 2.5px black;
