@@ -107,13 +107,15 @@ nav a:hover {
 .banner h2 {
   font-size: 24px;
   font-weight: bold;
-  color: rgb(0, 60, 0);
+  color: rgb(11, 83, 11);
+  text-shadow: 0px 0px 5px white, 1.5px 1.5px rgb(148, 167, 148);
 }
 
 .banner p {
   font-size: 16px;
-  color: rgb(148, 167, 148);
+  color: rgb(156, 187, 156);
   margin: 10px auto;
+  text-shadow: 0px 0px 0.5px rgb(11, 83, 11);
 }
 
 .banner button {
