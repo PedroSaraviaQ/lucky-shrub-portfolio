@@ -126,6 +126,7 @@ nav a:hover {
   border: var(--BN-BTN-COLOR) 1px solid;
   border-radius: 10px;
   margin-top: 10px;
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -205,6 +206,7 @@ nav a:hover {
     margin-top: 0;
     font-size: 12px;
     height: 40px;
+    box-shadow: 2px 2px 5px black;
   }
 }
 
@@ -252,8 +254,6 @@ nav a:hover {
     margin-top: 3px;
     width: 50%;
     height: 50px;
-    box-shadow: 2px 2px 5px black;
-    cursor: pointer;
   }
 
   .banner img {
