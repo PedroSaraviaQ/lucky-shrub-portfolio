@@ -191,13 +191,13 @@ nav a:hover {
   .banner h2 {
     color: rgb(220, 252, 220);
     font-size: 16px;
+    text-shadow: 1px 1px black;
   }
 
   .banner p {
-    /*********************** make font more legible by changing colors ***************************/
     color: white;
     font-size: 14px;
-    text-shadow: 0px 0px 2.5px black;
+    text-shadow: 0px 0px 5px black, 1px 1px black;
     margin: 15px auto;
   }
 
