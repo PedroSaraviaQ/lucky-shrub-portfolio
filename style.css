@@ -165,10 +165,10 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     height: 17.75vw;
+    padding-left: 4vw;
   }
 
   header img {
-    margin-left: 4vw;
     height: 14vw;
     filter: none;
   }
@@ -216,10 +216,10 @@ nav a:hover {
 
   header {
     height: 180px;
+    padding-left: 50px;
   }
 
   header img {
-    margin-left: 40px;
     height: 140px;
   }
 
