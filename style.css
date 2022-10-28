@@ -10,8 +10,6 @@
   --LG-RADIUS: 0.5px;
   --LG-COLOR: green;
   --BN-RADIUS: 1px;
-  --BN-RADIUS-PC: 3px;
-  --BN-RADIUS-B-PC: 1.5px;
   --BN-COLOR: white;
   --BN-BTN-COLOR: rgb(0, 150, 0);
 }
@@ -276,10 +274,10 @@ nav a:hover {
     width: 55%;
     transition: 1s;
     margin-right: 0;
-    filter: drop-shadow(var(--BN-RADIUS-PC) var(--BN-RADIUS-PC) var(--BN-RADIUS-B-PC) var(--BN-COLOR))
-      drop-shadow(calc(var(--BN-RADIUS-PC) * -1) calc(var(--BN-RADIUS-PC) * -1) var(--BN-RADIUS-B-PC) var(--BN-COLOR))
-      drop-shadow(calc(var(--BN-RADIUS-PC) * -1) var(--BN-RADIUS-PC) var(--BN-RADIUS-B-PC) var(--BN-COLOR))
-      drop-shadow(var(--BN-RADIUS-PC) calc(var(--BN-RADIUS-PC) * -1) var(--BN-RADIUS-B-PC) var(--BN-COLOR)) brightness(0.9);
+    filter: drop-shadow(var(--BN-RADIUS) var(--BN-RADIUS) var(--BN-COLOR))
+      drop-shadow(calc(var(--BN-RADIUS) * -1) calc(var(--BN-RADIUS) * -1) var(--BN-COLOR))
+      drop-shadow(calc(var(--BN-RADIUS) * -1) var(--BN-RADIUS) var(--BN-COLOR))
+      drop-shadow(var(--BN-RADIUS) calc(var(--BN-RADIUS) * -1) var(--BN-COLOR)) brightness(0.9);
   }
 
   .banner img:hover {
