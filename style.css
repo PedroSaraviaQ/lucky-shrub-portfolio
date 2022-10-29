@@ -103,7 +103,7 @@ nav a:hover {
     drop-shadow(var(--BN-RADIUS) calc(var(--BN-RADIUS) * -1) var(--BN-COLOR));
 }
 
-.banner h2 {
+.banner h1 {
   font-size: 24px;
   font-weight: bold;
   color: rgb(11, 83, 11);
@@ -198,7 +198,7 @@ nav a:hover {
     margin-right: 3%;
   }
 
-  .banner h2 {
+  .banner h1 {
     color: rgb(220, 252, 220);
     font-size: 16px;
     text-shadow: 1px 1px black;
@@ -253,7 +253,7 @@ nav a:hover {
     text-align: left;
   }
 
-  .banner h2 {
+  .banner h1 {
     font-size: 32px;
     text-shadow: 0px 0px 5px black, 2.5px 2.5px black;
   }
