@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=IBM+Plex+Serif&family=Nunito&display=swap");
 
 * {
   padding: 0;
@@ -138,6 +138,18 @@ nav a:hover {
 
 .banner button:focus {
   animation: learnMore 2.5s;
+}
+
+.forum {
+  font-family: "Nunito";
+}
+
+.forum article {
+  background-color: white;
+}
+
+.forum h3 {
+  font-family: "IBM Plex Serif";
 }
 
 @keyframes learnMore {
