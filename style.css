@@ -144,12 +144,39 @@ nav a:hover {
   font-family: "Nunito";
 }
 
+.forum .posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .forum article {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 90%;
+}
+
+.forum img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.forum .description {
+  padding: 11px;
 }
 
 .forum h3 {
   font-family: "IBM Plex Serif";
+  line-height: 25px;
+  margin-bottom: 6px;
+}
+
+.forum p {
+  font-size: 15px;
 }
 
 @keyframes learnMore {
