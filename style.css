@@ -153,7 +153,7 @@ nav a:hover {
 
 @media screen and (min-width: 600px) {
   body {
-    background-position-y: calc(44.36vw - 1%);
+    background-position-y: 43.36vw;
   }
 
   .background {
