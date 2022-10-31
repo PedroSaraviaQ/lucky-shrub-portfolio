@@ -355,6 +355,14 @@ nav a:hover {
     transform: scale(1.01);
   }
 
+  .forum {
+    margin-top: calc(15vw - 160px);
+  }
+
+  .forum h2 {
+    margin-inline: 50px;
+  }
+
   .forum .posts {
     gap: 45px;
     margin-inline: 50px;
