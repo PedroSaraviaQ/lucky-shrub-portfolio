@@ -267,6 +267,15 @@ nav a:hover {
     box-shadow: 2px 2px 5px black;
   }
 
+  .forum {
+    margin-top: 70px;
+  }
+
+  .forum h2 {
+    color: rgb(120, 120, 120);
+    margin-inline: 24px;
+  }
+
   .forum .posts {
     flex-direction: row;
     justify-content: space-between;
