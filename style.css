@@ -256,6 +256,18 @@ nav a:hover {
     height: 40px;
     box-shadow: 2px 2px 5px black;
   }
+
+  .forum .posts {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 24px;
+  }
+
+  .forum article {
+    width: calc(50% - 12px);
+    height: calc(345px + 10vw);
+  }
 }
 
 @media screen and (min-width: 1150px) {
