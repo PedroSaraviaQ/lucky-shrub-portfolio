@@ -334,4 +334,13 @@ nav a:hover {
   .banner img:hover {
     transform: scale(1.01);
   }
+
+  .forum .posts {
+    margin-inline: 50px;
+  }
+
+  .forum article {
+    width: calc(33.33% - 30px);
+    height: calc(10vw + 280px);
+  }
 }
