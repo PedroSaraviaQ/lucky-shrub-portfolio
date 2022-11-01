@@ -352,6 +352,14 @@ footer #copyright {
     width: calc(50% - 12px);
     height: calc(345px + 10vw);
   }
+
+  footer > div {
+    height: 200px;
+  }
+
+  #footer-container {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1150px) {
