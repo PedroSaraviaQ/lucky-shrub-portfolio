@@ -444,4 +444,18 @@ footer #copyright {
     width: calc(33.33% - 30px);
     height: calc(10vw + 280px);
   }
+
+  footer > div {
+    height: 220px;
+  }
+
+  footer > div > a {
+    margin-left: 10.5%;
+  }
+
+  #footer-container::before {
+    content: "";
+    border: 1px solid #fff;
+    margin-left: -15%;
+  }
 }
