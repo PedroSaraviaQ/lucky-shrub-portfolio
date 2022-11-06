@@ -6,4 +6,39 @@ header {
   background-color: #000;
   height: 200px;
   color: #fff;
+
+  img {
+    height: 120px;
+    width: auto;
+    filter: drop-shadow(@LG-RADIUS @LG-RADIUS @LG-RADIUS @LG-COLOR)
+      drop-shadow(calc(@LG-RADIUS * -1) calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR)
+      drop-shadow(calc(@LG-RADIUS * -1) @LG-RADIUS @LG-RADIUS @LG-COLOR) drop-shadow(@LG-RADIUS calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR);
+  }
+
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      list-style-type: none;
+      li {
+        &:first-child {
+          text-decoration: underline;
+          text-underline-offset: 10px;
+        }
+        a {
+          color: inherit;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-shadow: 0 0 1px white;
+          transition: 0.4s;
+          &:hover {
+            color: rgb(144, 211, 36);
+          }
+        }
+      }
+    }
+  }
 }
