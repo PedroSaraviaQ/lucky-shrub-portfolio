@@ -28,13 +28,33 @@ header {
   height: 200px;
   color: #fff;
 }
+@media (min-width: 600px) {
+  header {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 17.75vw;
+    padding-left: 4vw;
+  }
+}
 header img {
   height: 120px;
   width: auto;
   filter: drop-shadow(0.5px 0.5px 0.5px green) drop-shadow(calc(0.5px * -1) calc(0.5px * -1) 0.5px green) drop-shadow(calc(0.5px * -1) 0.5px 0.5px green) drop-shadow(0.5px calc(0.5px * -1) 0.5px green);
 }
+@media (min-width: 600px) {
+  header img {
+    height: 12vw;
+    filter: none;
+  }
+}
 header nav {
   width: 100%;
+}
+@media (min-width: 600px) {
+  header nav {
+    width: 72%;
+  }
 }
 header nav ul {
   display: flex;
@@ -54,8 +74,18 @@ header nav ul li a {
   text-shadow: 0 0 1px white;
   transition: 0.4s;
 }
+@media (min-width: 600px) {
+  header nav ul li a {
+    text-shadow: none;
+  }
+}
 header nav ul li a:hover {
   color: #90d324;
+}
+@media (min-width: 600px) {
+  header nav ul li a:hover {
+    color: #afff2f;
+  }
 }
 main .background {
   margin-top: 200px;
@@ -71,6 +101,13 @@ main .background {
   height: 0;
   padding-top: 44.36%;
 }
+@media (min-width: 600px) {
+  main .background {
+    margin-top: 0;
+    background-image: linear-gradient(#000, transparent), url(../assets/bg-garden.jpg);
+    background-size: 100% 80%, 100%;
+  }
+}
 main .banner {
   display: flex;
   flex-direction: column-reverse;
@@ -80,9 +117,22 @@ main .banner {
   width: calc(40% + 170px);
   text-align: center;
 }
+@media (min-width: 600px) {
+  main .banner {
+    flex-direction: row-reverse;
+    margin-top: 0;
+    width: 90%;
+  }
+}
 main .banner img {
   width: 100%;
   filter: drop-shadow(1px 1px white) drop-shadow(calc(1px * -1) calc(1px * -1) white) drop-shadow(calc(1px * -1) 1px white) drop-shadow(1px calc(1px * -1) white);
+}
+@media (min-width: 600px) {
+  main .banner img {
+    width: 40%;
+    margin-right: 3%;
+  }
 }
 main .banner section h1 {
   font-size: 24px;
@@ -90,11 +140,26 @@ main .banner section h1 {
   color: #0b530b;
   text-shadow: 0px 0px 5px white, 1.5px 1.5px #94a794;
 }
+@media (min-width: 600px) {
+  main .banner section h1 {
+    color: #dcfcdc;
+    font-size: 16px;
+    text-shadow: 1px 1px black;
+  }
+}
 main .banner section p {
   font-size: 16px;
   color: #9cbb9c;
   margin: 10px auto;
   text-shadow: 0px 0px 0.5px #0b530b;
+}
+@media (min-width: 600px) {
+  main .banner section p {
+    color: white;
+    font-size: 14px;
+    text-shadow: 0px 0px 5px black, 1px 1px black;
+    margin: 15px auto;
+  }
 }
 main .banner section button {
   display: inline-block;
@@ -108,6 +173,14 @@ main .banner section button {
   margin-top: 10px;
   cursor: pointer;
   transition: 0.5s;
+}
+@media (min-width: 600px) {
+  main .banner section button {
+    margin-top: 0;
+    font-size: 12px;
+    height: 40px;
+    box-shadow: 2px 2px 5px black;
+  }
 }
 main .banner section button:hover {
   background-color: #00aa00;
@@ -131,11 +204,22 @@ main .forum {
   margin-top: 80px;
   margin-bottom: 30px;
 }
+@media (min-width: 600px) {
+  main .forum {
+    margin-top: 70px;
+  }
+}
 main .forum h2 {
   color: #969696;
   font-size: 22px;
   font-weight: lighter;
   margin-inline: 20px;
+}
+@media (min-width: 600px) {
+  main .forum h2 {
+    color: #787878;
+    margin-inline: 24px;
+  }
 }
 main .forum .posts {
   display: flex;
@@ -146,11 +230,26 @@ main .forum .posts {
   padding-top: 20px;
   margin-inline: 20px;
 }
+@media (min-width: 600px) {
+  main .forum .posts {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-inline: 24px;
+  }
+}
 main .forum .posts article {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+@media (min-width: 600px) {
+  main .forum .posts article {
+    width: calc(50% - 12px);
+    height: calc(345px + 10vw);
+  }
 }
 main .forum .posts article img {
   border-radius: 10px 10px 0 0;
@@ -181,6 +280,11 @@ footer > div {
   height: 180px;
   padding-inline: 7%;
 }
+@media (min-width: 600px) {
+  footer > div {
+    height: 200px;
+  }
+}
 footer > div img {
   height: 90px;
   width: auto;
@@ -190,6 +294,11 @@ footer > div #footer-container {
   justify-content: space-between;
   min-width: 220px;
   width: 70%;
+}
+@media (min-width: 600px) {
+  footer > div #footer-container {
+    width: 60%;
+  }
 }
 footer > div #footer-container .footer-list h3 {
   font-size: 14px;
@@ -231,4 +340,9 @@ body {
   background-repeat: no-repeat;
   background-position-y: calc(200px + 44.36vw);
   min-height: 100vh;
+}
+@media (min-width: 600px) {
+  body {
+    background-position-y: 43.36vw;
+  }
 }

@@ -12,6 +12,11 @@ main {
     width: 100%;
     height: 0;
     padding-top: 44.36%;
+    @media @medium {
+      margin-top: 0;
+      background-image: linear-gradient(#000, transparent), url(../assets/bg-garden.jpg);
+      background-size: 100% 80%, 100%;
+    }
   }
 
   .banner {
@@ -22,10 +27,19 @@ main {
     margin: 25px auto;
     width: calc(40% + 170px);
     text-align: center;
+    @media @medium {
+      flex-direction: row-reverse;
+      margin-top: 0;
+      width: 90%;
+    }
     img {
       width: 100%;
       filter: drop-shadow(@BN-RADIUS @BN-RADIUS @BN-COLOR) drop-shadow(calc(@BN-RADIUS * -1) calc(@BN-RADIUS * -1) @BN-COLOR)
         drop-shadow(calc(@BN-RADIUS * -1) @BN-RADIUS @BN-COLOR) drop-shadow(@BN-RADIUS calc(@BN-RADIUS * -1) @BN-COLOR);
+      @media @medium {
+        width: 40%;
+        margin-right: 3%;
+      }
     }
     section {
       h1 {
@@ -33,12 +47,23 @@ main {
         font-weight: bold;
         color: rgb(11, 83, 11);
         text-shadow: 0px 0px 5px white, 1.5px 1.5px rgb(148, 167, 148);
+        @media @medium {
+          color: rgb(220, 252, 220);
+          font-size: 16px;
+          text-shadow: 1px 1px black;
+        }
       }
       p {
         font-size: 16px;
         color: rgb(156, 187, 156);
         margin: 10px auto;
         text-shadow: 0px 0px 0.5px rgb(11, 83, 11);
+        @media @medium {
+          color: white;
+          font-size: 14px;
+          text-shadow: 0px 0px 5px black, 1px 1px black;
+          margin: 15px auto;
+        }
       }
       button {
         display: inline-block;
@@ -52,6 +77,13 @@ main {
         margin-top: 10px;
         cursor: pointer;
         transition: 0.5s;
+        @media @medium {
+          margin-top: 0;
+          font-size: 12px;
+          height: 40px;
+          box-shadow: 2px 2px 5px black;
+        }
+
         &:hover {
           background-color: rgb(0, 170, 0);
           border: rgb(0, 170, 0) 1px solid;
@@ -77,11 +109,18 @@ main {
     font-family: "Nunito";
     margin-top: 80px;
     margin-bottom: 30px;
+    @media @medium {
+      margin-top: 70px;
+    }
     h2 {
       color: rgb(150, 150, 150);
       font-size: 22px;
       font-weight: lighter;
       margin-inline: 20px;
+      @media @medium {
+        color: rgb(120, 120, 120);
+        margin-inline: 24px;
+      }
     }
     .posts {
       display: flex;
@@ -91,11 +130,22 @@ main {
       border-top: 1px solid rgb(150, 150, 150);
       padding-top: 20px;
       margin-inline: 20px;
+      @media @medium {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-inline: 24px;
+      }
       article {
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
+        @media @medium {
+          width: calc(50% - 12px);
+          height: calc(345px + 10vw);
+        }
         img {
           border-radius: 10px 10px 0 0;
           width: 100%;

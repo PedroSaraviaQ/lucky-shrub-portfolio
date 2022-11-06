@@ -6,6 +6,13 @@ header {
   background-color: #000;
   height: 200px;
   color: #fff;
+  @media @medium {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 17.75vw;
+    padding-left: 4vw;
+  }
 
   img {
     height: 120px;
@@ -13,10 +20,17 @@ header {
     filter: drop-shadow(@LG-RADIUS @LG-RADIUS @LG-RADIUS @LG-COLOR)
       drop-shadow(calc(@LG-RADIUS * -1) calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR)
       drop-shadow(calc(@LG-RADIUS * -1) @LG-RADIUS @LG-RADIUS @LG-COLOR) drop-shadow(@LG-RADIUS calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR);
+    @media @medium {
+      height: 12vw;
+      filter: none;
+    }
   }
 
   nav {
     width: 100%;
+    @media @medium {
+      width: 72%;
+    }
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -34,8 +48,14 @@ header {
           text-transform: uppercase;
           text-shadow: 0 0 1px white;
           transition: 0.4s;
+          @media @medium {
+            text-shadow: none;
+          }
           &:hover {
             color: rgb(144, 211, 36);
+            @media @medium {
+              color: rgb(175, 255, 47);
+            }
           }
         }
       }
