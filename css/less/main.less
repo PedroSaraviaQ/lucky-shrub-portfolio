@@ -2,7 +2,7 @@ main {
   .background {
     margin-top: 200px;
     position: absolute;
-    top: 0px;
+    top: 0;
     z-index: -1;
     background-color: #000;
     background-image: @BG-GARDEN;
@@ -67,7 +67,7 @@ main {
         font-size: 24px;
         font-weight: bold;
         color: rgb(11, 83, 11);
-        text-shadow: 0px 0px 5px white, 1.5px 1.5px rgb(148, 167, 148);
+        text-shadow: 0 0 5px white, 1.5px 1.5px rgb(148, 167, 148);
         @media @medium {
           color: rgb(220, 252, 220);
           font-size: 16px;
@@ -75,23 +75,23 @@ main {
         }
         @media @large {
           font-size: 32px;
-          text-shadow: 0px 0px 5px black, 2.5px 2.5px black;
+          text-shadow: 0 0 5px black, 2.5px 2.5px black;
         }
       }
       p {
         font-size: 16px;
         color: rgb(156, 187, 156);
         margin: 10px auto;
-        text-shadow: 0px 0px 0.5px rgb(11, 83, 11);
+        text-shadow: 0 0 0.5px rgb(11, 83, 11);
         @media @medium {
           color: white;
           font-size: 14px;
-          text-shadow: 0px 0px 5px black, 1px 1px black;
+          text-shadow: 0 0 5px black, 1px 1px black;
           margin: 15px auto;
         }
         @media @large {
           font-size: 16px;
-          text-shadow: 0px 0px 5px black, 1.5px 1.5px black;
+          text-shadow: 0 0 5px black, 1.5px 1.5px black;
         }
       }
       button {
