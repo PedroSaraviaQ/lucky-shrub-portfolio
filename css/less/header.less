@@ -21,9 +21,7 @@ header {
   img {
     height: 120px;
     width: auto;
-    filter: drop-shadow(@LG-RADIUS @LG-RADIUS @LG-RADIUS @LG-COLOR)
-      drop-shadow(calc(@LG-RADIUS * -1) calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR)
-      drop-shadow(calc(@LG-RADIUS * -1) @LG-RADIUS @LG-RADIUS @LG-COLOR) drop-shadow(@LG-RADIUS calc(@LG-RADIUS * -1) @LG-RADIUS @LG-COLOR);
+    .img-shadow(@LG-RADIUS, @LG-RADIUS, @LG-COLOR);
     @media @medium {
       height: 12vw;
       filter: none;
