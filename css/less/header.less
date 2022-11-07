@@ -13,6 +13,10 @@ header {
     height: 17.75vw;
     padding-left: 4vw;
   }
+  @media @large {
+    height: 180px;
+    padding-left: 50px;
+  }
 
   img {
     height: 120px;
@@ -24,12 +28,18 @@ header {
       height: 12vw;
       filter: none;
     }
+    @media @large {
+      height: 140px;
+    }
   }
 
   nav {
     width: 100%;
     @media @medium {
       width: 72%;
+    }
+    @media @large {
+      width: 60%;
     }
     ul {
       display: flex;
@@ -55,6 +65,10 @@ header {
             color: rgb(144, 211, 36);
             @media @medium {
               color: rgb(175, 255, 47);
+            }
+            @media @large {
+              color: rgb(61, 194, 27);
+              text-shadow: 1px 1px 1px #000;
             }
           }
         }

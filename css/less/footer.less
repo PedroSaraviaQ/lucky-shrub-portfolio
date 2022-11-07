@@ -13,9 +13,17 @@ footer {
     @media @medium {
       height: 200px;
     }
-    img {
-      height: 90px;
-      width: auto;
+    @media @large {
+      height: 220px;
+    }
+    & > a {
+      @media @large {
+        margin-left: 10.5%;
+      }
+      img {
+        height: 90px;
+        width: auto;
+      }
     }
     #footer-container {
       display: flex;
@@ -24,6 +32,13 @@ footer {
       width: 70%;
       @media @medium {
         width: 60%;
+      }
+      @media @large {
+        &::before {
+          content: "";
+          border: 1px solid #fff;
+          margin-left: -15%;
+        }
       }
       .footer-list {
         h3 {
