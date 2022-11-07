@@ -173,7 +173,7 @@ main .banner img {
     width: 55%;
     transition: 1s;
     margin-right: 0;
-    filter: drop-shadow(1px 1px white) drop-shadow(calc(1px * -1) calc(1px * -1) white) drop-shadow(calc(1px * -1) 1px white) drop-shadow(1px calc(1px * -1) white) brightness(0.9);
+    filter: drop-shadow(1px 1px  white) drop-shadow(calc(1px * -1) calc(1px * -1)  white) drop-shadow(calc(1px * -1) 1px  white) drop-shadow(1px calc(1px * -1)  white) brightness(0.9);
   }
   main .banner img:hover {
     transform: scale(1.01);

@@ -1,4 +1,4 @@
 .img-shadow(@radius, @shadow, @color) {
-  filter: drop-shadow(@radius @radius @shadow @color) drop-shadow(calc(@radius * -1) calc(@radius * -1) @shadow @color)
+  filter+_: drop-shadow(@radius @radius @shadow @color) drop-shadow(calc(@radius * -1) calc(@radius * -1) @shadow @color)
     drop-shadow(calc(@radius * -1) @radius @shadow @color) drop-shadow(@radius calc(@radius * -1) @shadow @color);
 }

@@ -51,8 +51,8 @@ main {
         width: 55%;
         transition: 1s;
         margin-right: 0;
-        filter: drop-shadow(@BN-RADIUS @BN-RADIUS @BN-COLOR) drop-shadow(calc(@BN-RADIUS * -1) calc(@BN-RADIUS * -1) @BN-COLOR)
-          drop-shadow(calc(@BN-RADIUS * -1) @BN-RADIUS @BN-COLOR) drop-shadow(@BN-RADIUS calc(@BN-RADIUS * -1) @BN-COLOR) brightness(0.9);
+        .img-shadow(@BN-RADIUS, ~"", @BN-COLOR);
+        filter+_: brightness(0.9);
         &:hover {
           transform: scale(1.01);
         }
