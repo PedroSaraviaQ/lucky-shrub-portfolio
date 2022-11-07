@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "IBM Plex Serif";
+  font-family: 'IBM Plex Serif';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ibmplexserif/v15/jizDREVNn1dOx-zrZ2X3pZvkThUY.ttf) format("truetype");
+  src: url(https://fonts.gstatic.com/s/ibmplexserif/v15/jizDREVNn1dOx-zrZ2X3pZvkThUY.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lexend Deca";
+  font-family: 'Lexend Deca';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lexenddeca/v17/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1ArA.ttf) format("truetype");
+  src: url(https://fonts.gstatic.com/s/lexenddeca/v17/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1ArA.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf) format("truetype");
+  src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf) format('truetype');
 }
 header {
   display: flex;
@@ -46,8 +46,7 @@ header {
 header img {
   height: 120px;
   width: auto;
-  filter: drop-shadow(0.5px 0.5px 0.5px green) drop-shadow(calc(0.5px * -1) calc(0.5px * -1) 0.5px green)
-    drop-shadow(calc(0.5px * -1) 0.5px 0.5px green) drop-shadow(0.5px calc(0.5px * -1) 0.5px green);
+  filter: drop-shadow(0.5px 0.5px 0.5px green) drop-shadow(calc(0.5px * -1) calc(0.5px * -1) 0.5px green) drop-shadow(calc(0.5px * -1) 0.5px 0.5px green) drop-shadow(0.5px calc(0.5px * -1) 0.5px green);
 }
 @media (min-width: 600px) {
   header img {
@@ -161,8 +160,7 @@ main .banner {
 }
 main .banner img {
   width: 100%;
-  filter: drop-shadow(1px 1px white) drop-shadow(calc(1px * -1) calc(1px * -1) white) drop-shadow(calc(1px * -1) 1px white)
-    drop-shadow(1px calc(1px * -1) white);
+  filter: drop-shadow(1px 1px  white) drop-shadow(calc(1px * -1) calc(1px * -1)  white) drop-shadow(calc(1px * -1) 1px  white) drop-shadow(1px calc(1px * -1)  white);
 }
 @media (min-width: 600px) {
   main .banner img {
@@ -175,8 +173,7 @@ main .banner img {
     width: 55%;
     transition: 1s;
     margin-right: 0;
-    filter: drop-shadow(1px 1px white) drop-shadow(calc(1px * -1) calc(1px * -1) white) drop-shadow(calc(1px * -1) 1px white)
-      drop-shadow(1px calc(1px * -1) white) brightness(0.9);
+    filter: drop-shadow(1px 1px white) drop-shadow(calc(1px * -1) calc(1px * -1) white) drop-shadow(calc(1px * -1) 1px white) drop-shadow(1px calc(1px * -1) white) brightness(0.9);
   }
   main .banner img:hover {
     transform: scale(1.01);
