@@ -67,31 +67,35 @@ main {
         font-size: 24px;
         font-weight: bold;
         color: rgb(11, 83, 11);
-        text-shadow: 0 0 5px white, 1.5px 1.5px rgb(148, 167, 148);
+        .text-shadow(white, 5px);
+        .text-shadow(rgb(148, 167, 148), ~"", 1.5px);
         @media @medium {
           color: rgb(220, 252, 220);
           font-size: 16px;
-          text-shadow: 1px 1px black;
+          .text-shadow(black, ~"", 1px);
         }
         @media @large {
           font-size: 32px;
-          text-shadow: 0 0 5px black, 2.5px 2.5px black;
+          .text-shadow(black, 5px);
+          .text-shadow(black, ~"", 2.5px);
         }
       }
       p {
         font-size: 16px;
         color: rgb(156, 187, 156);
         margin: 10px auto;
-        text-shadow: 0 0 0.5px rgb(11, 83, 11);
+        .text-shadow(rgb(11, 83, 11), 0.5px);
         @media @medium {
           color: white;
           font-size: 14px;
-          text-shadow: 0 0 5px black, 1px 1px black;
+          .text-shadow(black, 5px);
+          .text-shadow(black, ~"", 1px);
           margin: 15px auto;
         }
         @media @large {
           font-size: 16px;
-          text-shadow: 0 0 5px black, 1.5px 1.5px black;
+          .text-shadow(black, 5px);
+          .text-shadow(black, ~"", 1.5px);
         }
       }
       button {

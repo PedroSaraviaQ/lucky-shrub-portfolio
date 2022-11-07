@@ -189,19 +189,19 @@ main .banner section h1 {
   font-size: 24px;
   font-weight: bold;
   color: #0b530b;
-  text-shadow: 0 0 5px white, 1.5px 1.5px #94a794;
+  text-shadow: 0 0 5px white, 1.5px 1.5px  #94a794;
 }
 @media (min-width: 600px) {
   main .banner section h1 {
     color: #dcfcdc;
     font-size: 16px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px  black;
   }
 }
 @media (min-width: 1150px) {
   main .banner section h1 {
     font-size: 32px;
-    text-shadow: 0 0 5px black, 2.5px 2.5px black;
+    text-shadow: 0 0 5px black, 2.5px 2.5px  black;
   }
 }
 main .banner section p {
@@ -214,14 +214,14 @@ main .banner section p {
   main .banner section p {
     color: white;
     font-size: 14px;
-    text-shadow: 0 0 5px black, 1px 1px black;
+    text-shadow: 0 0 5px black, 1px 1px  black;
     margin: 15px auto;
   }
 }
 @media (min-width: 1150px) {
   main .banner section p {
     font-size: 16px;
-    text-shadow: 0 0 5px black, 1.5px 1.5px black;
+    text-shadow: 0 0 5px black, 1.5px 1.5px  black;
   }
 }
 main .banner section button {
