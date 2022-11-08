@@ -68,34 +68,34 @@ main {
         font-weight: bold;
         color: rgb(11, 83, 11);
         .text-shadow-c(5px, white);
-        .text-shadow(rgb(148, 167, 148), ~"", 1.5px);
+        .text-shadow(1.5px, rgb(148, 167, 148));
         @media @medium {
           color: rgb(220, 252, 220);
           font-size: 16px;
-          .text-shadow(black, ~"", 1px);
+          .text-shadow(1px, black);
         }
         @media @large {
           font-size: 32px;
-          .text-shadow-c(5px,black);
-          .text-shadow(black, ~"", 2.5px);
+          .text-shadow-c(5px, black);
+          .text-shadow(2.5px, black);
         }
       }
       p {
         font-size: 16px;
         color: rgb(156, 187, 156);
         margin: 10px auto;
-        .text-shadow(rgb(11, 83, 11), 0.5px);
+        .text-shadow-c(0.5px, rgb(11, 83, 11));
         @media @medium {
           color: white;
           font-size: 14px;
-          .text-shadow-c(5px,black);
-          .text-shadow(black, ~"", 1px);
+          .text-shadow-c(5px, black);
+          .text-shadow(1px, black);
           margin: 15px auto;
         }
         @media @large {
           font-size: 16px;
-          .text-shadow-c(5px,black);
-          .text-shadow(black, ~"", 1.5px);
+          .text-shadow-c(5px, black);
+          .text-shadow(1.5px, black);
         }
       }
       button {
