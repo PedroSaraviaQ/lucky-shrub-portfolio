@@ -42,7 +42,7 @@ main {
     }
     img {
       width: 100%;
-      .img-shadow(@BN-RADIUS, ~"", @BN-COLOR);
+      .img-shadow(@BN-RADIUS, @BN-COLOR);
       @media @medium {
         width: 40%;
         margin-right: 3%;
@@ -51,7 +51,7 @@ main {
         width: 55%;
         transition: 1s;
         margin-right: 0;
-        .img-shadow(@BN-RADIUS, ~"", @BN-COLOR);
+        .img-shadow(@BN-RADIUS, @BN-COLOR);
         filter+_: brightness(0.9);
         &:hover {
           transform: scale(1.01);

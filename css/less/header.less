@@ -1,3 +1,5 @@
+@LG-SHADOW: @LG-RADIUS;
+
 header {
   display: flex;
   flex-direction: column;
@@ -21,7 +23,7 @@ header {
   img {
     height: 120px;
     width: auto;
-    .img-shadow(@LG-RADIUS, @LG-RADIUS, @LG-COLOR);
+    .img-shadow(@LG-RADIUS, @LG-COLOR, @LG-SHADOW);
     @media @medium {
       height: 12vw;
       filter: none;
