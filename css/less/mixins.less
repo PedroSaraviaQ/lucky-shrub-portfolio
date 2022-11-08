@@ -2,6 +2,10 @@
   text-shadow+: @radius @radius @shadow @color;
 }
 
+.text-shadow-c(@shadow, @color) {
+  text-shadow+: 0 0 @shadow @color;
+}
+
 .img-shadow(@radius, @color, @shadow: ~"") {
   filter+_: drop-shadow(@radius @radius @shadow @color) drop-shadow(calc(@radius * -1) calc(@radius * -1) @shadow @color)
     drop-shadow(calc(@radius * -1) @radius @shadow @color) drop-shadow(@radius calc(@radius * -1) @shadow @color);
