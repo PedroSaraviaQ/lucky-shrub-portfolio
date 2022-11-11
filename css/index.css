@@ -1,23 +1,14 @@
 @font-face {
-  font-family: 'IBM Plex Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ibmplexserif/v15/jizDREVNn1dOx-zrZ2X3pZvkThUY.ttf) format('truetype');
+  font-family: "Lexend Deca";
+  src: url("../assets/fonts/lexend-deca.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Lexend Deca';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lexenddeca/v17/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1ArA.ttf) format('truetype');
+  font-family: "IBM Plex Serif";
+  src: url("../assets/fonts/ibm-plex-serif.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf) format('truetype');
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito.ttf") format("truetype");
 }
 header {
   display: flex;
@@ -187,7 +178,6 @@ main .banner img {
 }
 main .banner section h1 {
   font-size: 24px;
-  font-weight: bold;
   color: #0b530b;
   text-shadow: 0 0 5px white, 1.5px 1.5px #94a794;
 }
