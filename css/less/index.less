@@ -1,11 +1,23 @@
 // Importing fonts
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=IBM+Plex+Serif&family=Nunito&display=swap");
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../assets/fonts/lexend-deca.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("../assets/fonts/ibm-plex-serif.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito.ttf") format("truetype");
+}
 
 // Importing "less" files
 @import "variables";
 @import "mixins";
 @import "header";
-@import "main";
+@import "main-banner";
+@import "main-forum";
 @import "footer";
 
 * {
@@ -27,4 +39,8 @@ body {
   @media @medium {
     background-position-y: 43.36vw;
   }
+}
+
+img:not([alt]) {
+  border: 10px red solid !important;
 }
