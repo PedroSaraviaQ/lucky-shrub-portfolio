@@ -31,13 +31,14 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgb(193, 224, 210), #fff);
-  background-size: 100% 20vw;
+  background-image: linear-gradient(rgb(193, 224, 210), #fff), linear-gradient(rgb(193, 224, 210), rgb(193, 224, 210));
+  background-size: 100% 20vw, 100% calc(200px + 44.36vw);
   background-repeat: no-repeat;
-  background-position-y: calc(200px + 44.36vw);
+  background-position-y: calc(200px + 44.36vw), 0;
   min-height: 100vh;
   @media @medium {
-    background-position-y: 43.36vw;
+    background-position-y: 44.36vw, 0;
+    background-size: 100% 20vw, 100% 44.36vw;
   }
 }
 
