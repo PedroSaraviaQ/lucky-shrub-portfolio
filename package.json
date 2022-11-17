@@ -1,7 +1,7 @@
 {
   "name": "lucky-shrub-portfolio",
   "scripts": {
-    "less": "less-watch-compiler css/less css index.less"
+    "less-home": "less-watch-compiler less ./ index.less"
   },
   "dependencies": {
     "less": "^4.1.3",
