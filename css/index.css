@@ -443,7 +443,8 @@ body {
 }
 @media (min-width: 600px) {
   body {
-    background-position-y: 43.36vw;
+    background-position-y: 44.36vw, 0;
+    background-size: 100% 20vw, 100% 44.36vw;
   }
 }
 img:not([alt]) {
